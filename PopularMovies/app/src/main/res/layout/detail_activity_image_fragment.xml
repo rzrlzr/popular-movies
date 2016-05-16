@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              tools:context="com.odisenglish.popularmovies.DetailActivityFragment"
+              android:weightSum="2" >
+
+
+    <ImageView
+        android:id="@+id/detail_activity_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:layout_weight="1"
+        android:contentDescription="@string/movie_poster_description"
+        android:padding="15dp"  />
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        tools:context="com.odisenglish.popularmovies.DetailActivityFragment"
+        android:padding="13dp"  >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/movie_title_text_view"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/movie_release_date_text_view"
+            android:paddingTop="12dp"
+            android:textSize="14sp"
+            android:layout_below="@+id/movie_title_text_view"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/movie_vote_average_text_view"
+            android:paddingTop="20dp"
+            android:textSize="14sp"
+            android:layout_below="@+id/movie_release_date_text_view"/>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

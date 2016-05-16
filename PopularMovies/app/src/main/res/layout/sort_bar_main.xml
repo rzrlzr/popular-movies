@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="70dp">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/popular_button"
+        android:id="@+id/button_popular"
+        android:layout_weight="1"
+        android:layout_margin="0dp"
+        android:padding="0dp"
+        android:background="@drawable/button_selected_bg"
+        android:textColor="@color/white"
+        style="?android:attr/borderlessButtonStyle"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/top_rated_button"
+        android:id="@+id/button_top_rated"
+        android:layout_weight="1"
+        android:background="@drawable/button_selected_bg"
+        android:layout_margin="0dp"
+        android:padding="0dp"
+        android:textColor="@color/white"
+        style="?android:attr/borderlessButtonStyle"
+        />
+
+</LinearLayout>
